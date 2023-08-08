@@ -1,0 +1,543 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.wrapper {}
+
+header {
+    color: orange;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 0.5rem 163px;
+    height: 50px;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+}
+
+
+nav ul {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+    margin-left: 35.5rem;
+}
+
+nav ul li a {
+    margin: 0 30px;
+    text-decoration-line: none;
+    color: rgb(185, 185, 185);
+}
+
+
+
+.logo img {
+    width: 175px;
+    height: 60px;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+.row-2 {
+    width: 100%;
+    display: flex;
+
+}
+.col-12{
+    width: 100%;
+}
+.col {
+    width: 50%;
+    color: #fff;
+}
+
+.col-2 {
+    width: 20%;
+    padding-right: 60px;
+}
+
+.col-3 {
+    width: 50%;
+}
+.col-md{
+    width: 33.333%;
+}
+
+.row-2 {
+    width: 100%;
+    display: flex;
+}
+
+.col h2 {
+    margin-top: 25px;
+}
+
+.line {
+    width: 64px;
+    height: 2px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    margin: 30px auto;
+}
+
+.col p {
+    margin-bottom: 49px;
+
+}
+
+.col .line {
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#banner {
+    background: url(./img/banner.jpg) no-repeat bottom center;
+    background-size: cover;
+    padding: 120px 163px 135px;
+}
+
+
+/* resposive navbar */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    li {
+        display: none;
+    }
+}
+
+#banner .col a {
+    display: block;
+    padding: 10px 27px;
+    width: 80px;
+    /* position: relative; */
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #fff;
+    transition: ease-in .3s;
+}
+
+.col a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.col a span {
+    align-items: center;
+}
+
+.sign h3 span {
+    color: #ff8b38;
+}
+
+.form-control {
+    display: block;
+}
+
+#banner form {
+    max-width: 360px;
+    width: 100%;
+    float: right;
+    background: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#banner form h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    background: #f5f5f5;
+    padding: 20px 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#banner form input {
+    width: 85%;
+    padding: 10px;
+    border: 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #d6d6d6;
+    border-left: 1px solid #fbfbfb;
+    border-right: 1px solid #fbfbfb;
+    outline: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#banner .col form a {
+    border: none;
+    text-decoration-line: none;
+    background: #ff8b38;
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: 50px;
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#banner .col form a:hover {
+    background: rgb(206, 51, 20);
+    color: #fbfbfb;
+}
+
+/* social */
+#social {
+    padding: 0 163px;
+}
+
+#sublist {
+    padding: 100px 163px;
+
+}
+#tablist{
+    background: #f5f5f5;
+
+}
+#standard {
+    background: #f5f5f5;
+    padding: 190px 163;
+}
+#highlights {
+    padding: 0 163px;
+}
+#pricing {
+    background: #f5f5f5;;
+    padding: 115px 150px;
+}
+#customer{
+    padding: 80px 163px;
+
+}
+#design{
+    padding: 49px 163px;
+    background-image: url("/assets/img/news.jpg");
+    
+}
+
+.white{
+    color: #fff;
+
+}
+section {
+    padding: 50px 163px;
+
+}
+
+#social .row .col {
+    color: black;
+}
+
+
+.col .apps {
+    display: flex;
+
+}
+
+.col .apps a {
+    padding: 40px 28px;
+    text-decoration: none;
+    color: #939393;
+    font-size: 2rem;
+}
+
+.col .apps a:hover {
+    color: #ff8b38;
+}
+
+.col-2 ul {
+    list-style: none;
+}
+
+.col-2 ul li {
+    margin: 2px;
+    display: block;
+    text-align: center;
+    line-height: 112px;
+    width: 112px;
+    height: 112px;
+    background-color: #464545;
+
+}
+
+.col-2 ul li a {
+    color: #fff;
+}
+
+.col-2 ul li:hover {
+    transition: .2s;
+    color: #fff;
+    background-color: #ff8b38;
+}
+
+.active {
+    padding: 47px 33.5px;
+    background-color: #ff8b38;
+
+}
+
+.black {
+    color: rgb(35, 35, 35);
+}
+
+.col-3 img {
+    float: right;
+}
+
+.ml {
+    margin-left: 10rem;
+}
+
+#tablist h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 50px;
+}
+
+#tablist .col .black {
+    padding-left: 30px;
+}
+
+#tablist .col .black p {
+    padding-bottom: 45px;
+}
+
+#tablist p {
+    font-weight: 300;
+}
+
+#tablist a.btn-list {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background: #ff8b38;
+    border-radius: 3px;
+    font-size: 15px;
+    display: block;
+    border-radius: 5px;
+    text-decoration-line: none;
+}
+
+#tablist a.btn-list:hover {
+    background: rgb(206, 51, 20);
+    color: #ffffff;
+}
+
+.col .black .ml {
+    float: right;
+    margin-left: 30px;
+}
+.orange{
+    background: #ff8b38;
+}
+.line {
+    width: 64px;
+    height: 2px;
+    /* background: #ff8b38; */
+    /* display: block; */
+    margin: 30px auto;
+}
+
+.black .row a {
+    padding-right: 25px;
+}
+
+.black .row a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    color: #ff8b38;
+    text-align: center;
+    font-size: 18px;
+}
+
+.context h4 {
+    margin-bottom: 1rem;
+}
+.context p{
+    font-weight: 300;
+}
+.ml-7{
+    padding-left: 7rem;
+}
+#standard .col p{
+    font-weight: 300;
+}
+.col-12 h2{
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    margin: 0 auto;
+    /* color: #212121; */
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+}
+ .col-12 p{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+    font-weight: 300;
+}
+#highlights .col-md{
+    display: grid;
+    place-content: center;
+    padding: 0 35px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-weight: 300;
+
+}
+#highlights .col-md i{
+    width: 70px;
+    margin: 0 9rem;
+    display: inline-block;
+    align-items: center;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    color: #ff8b38;
+    text-align: center;
+    font-size: 30px;
+    transform: 2;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#highlights h3{
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+#pricing .col-12 p{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+    font-weight: 300;
+}
+.pricing-tag{
+    text-align: center;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.pricing-tag h3{
+    margin-bottom: 1px;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 22px 0;
+    border-bottom: 1px solid #fff;
+}
+.pricing-tag h1{
+    padding-top: 20px;
+    background: #333333;
+    color: #fff;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.pricing-tag h1 span{
+    font-size: 35px;
+}
+.pricing-tag h4{
+    background: #333333;
+    color: rgba(255,255,255,0.50);
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ff8b38;
+    font-weight: 400;
+    line-height: 100%;
+}
+.pricing-tag p{
+    font-weight: 300;
+    background: #fff;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.pricing-tag h5{
+    background: #ff8b38;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+    line-height: 100%;
+}
+#top {
+    margin-top: -30px;
+}
+.font-3{
+    font-weight: 300;
+}
+.col-md .message p{
+    position: relative;
+    background: #f5f5f5;
+    padding: 15px;
+    text-align: left;
+    max-width: 282px;
+    font-weight: 300;
+}
+.customer-info {
+    display: flex;
+    margin: 20px 0;
+}
+.clear-fix{
+    display: block;
+}
+.avatar{
+    width: 30%;
+    float: left;
+}
+.name{
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+#design .col-12 a {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 27px;
+    width: 80px;
+    /* position: relative; */
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #fff;
+    transition: ease-in .3s;
+}
+.col-12 a:hover {
+    color: #000;
+    background-color: #fff;
+}
