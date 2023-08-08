@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./assets/main.js">
+   <script src="./assets/main.js"></script>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,300&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,400&display=swap');
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +23,8 @@
 <body>
     <header>
         <div class="brand-icon"><img src="./assets/img/logo.png" alt=""></div>
-        <nav id="myDIV">
+        <input type="checkbox" id="check">
+        <nav class="topnav" id="myDIV">
             <ul>
                 <li><a class="active-nav" href="#banner">Features</a></li>
                 <li><a href="#tablist">About</a></li>
@@ -30,9 +34,11 @@
 
             </ul>
         </nav>
-        <div class="res-btn">
-            <a class="icon" href=""> <i class="fa-solid fa-bars"></i></a>
-        </div>
+        
+            <div class="res-btn">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            </div>
+       
     </header>
     <div class="wrapper">
 
@@ -419,6 +425,9 @@
         </footer>
     </div>
     <script>
+
+      
+
         var header = document.getElementById("myDIV");
         var btns = header.querySelectorAll("ul li a");
         for (var i = 0; i < btns.length; i++) {
@@ -441,7 +450,7 @@
                 tablinks[i].className = tablinks[i].className.replace("active", "");
             }
             document.getElementById(cityName).style.display = "flex";
-            evt.currentTarget.className += " active";
+            evt.currentTarget.className += "active";
         }
     </script>
 </body>
