@@ -20,9 +20,9 @@
 <body>
     <header>
         <div class="brand-icon"><img src="./assets/img/logo.png" alt=""></div>
-        <nav>
+        <nav id="myDIV">
             <ul>
-                <li><a href="#banner">Features</a></li>
+                <li><a class="active-nav" href="#banner">Features</a></li>
                 <li><a href="#tablist">About</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#customer">Reviews</a></li>
@@ -36,7 +36,7 @@
         <section id="banner">
             <div class="row">
                 <div class="col">
-                    <div class="logo"><img src="./assets/img/logo.png" alt=""></div>
+                    <div class="logo"><img src="./assets/img/bannerlogo.png" alt=""></div>
                     <h2>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
                     <span class="line"></span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique non dolorem esse eveniet.
@@ -366,7 +366,7 @@
         <!-- Design -->
         <section id="design">
             <div class="col-12 white">
-                <h2 >STYLISH AXURE DESIGN</h2>
+                <h2>STYLISH AXURE DESIGN</h2>
                 <span style="display: block;" class="line "></span>
                 <p>Lorem, ipsum dolor sit amet conssectetur adipisicing elit.</p>
                 <a><span>Download</span></a>
@@ -377,7 +377,7 @@
         <!-- Contact -->
         <section id="contact">
             <div class="col-12 black">
-                <h2 >CONTACT US</h2>
+                <h2>CONTACT US</h2>
                 <span style="display: block;" class="line orange"></span>
                 <p>Lorem, ipsum dolor sit amet conssectetur adipisicing elit.</p>
             </div>
@@ -388,7 +388,7 @@
                     <input type="text" placeholder="Subject">
                 </div>
                 <div class="col p-2">
-                    <textarea placeholder="Message" id="" ></textarea>
+                    <textarea placeholder="Message" id=""></textarea>
                 </div>
             </div>
             <div class="col-12 font-3">
@@ -400,7 +400,7 @@
 
         <footer>
             <div class="container">
-                  <div class="col-12">
+                <div class="col-12">
                     <div class="apps">
                         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -410,11 +410,22 @@
                         <a href=""><i class="fa-sharp fa-solid fa-rss"></i></a>
                     </div>
                     <p>© 2021 Axure Themes</p>
-                  </div>
+                </div>
             </div>
         </footer>
     </div>
     <script>
+        var header = document.getElementById("myDIV");
+        var btns = header.querySelectorAll("ul li a");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active-nav");
+                current[0].className = current[0].className.replace("active-nav", "");
+                this.className += " active-nav";
+            });
+        }
+
+
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab");

@@ -20,7 +20,9 @@ header {
     top: 0;
 }
 
-
+a.active-nav{
+    color: #ff8b38;
+}
 nav ul {
     justify-content: center;
     display: flex;
@@ -30,6 +32,7 @@ nav ul {
 }
 
 nav ul li a {
+    font-weight: 300;
     margin: 0 30px;
     text-decoration-line: none;
     color: rgb(185, 185, 185);
@@ -40,8 +43,9 @@ nav ul li a {
 .logo img {
     width: 175px;
     height: 60px;
-
 }
+
+  
 
 .row {
     width: 100%;
