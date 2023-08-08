@@ -63,7 +63,7 @@ nav ul li a {
 .col-2 {
     width: 20%;
     padding-right: 60px;
-    
+
 }
 
 
@@ -233,7 +233,7 @@ nav ul li a {
 }
 #design{
     padding: 49px 163px;
-    background-image: url("/assets/img/news.jpg");
+    background-image: url("./img/news.jpg");
     
 }
 #contact{
