@@ -161,7 +161,7 @@ label {
     }
 
     #standard .row>.black {
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 
     #highlights .row .col-md i {
@@ -197,6 +197,9 @@ label {
         width: 100%;
         margin-right: 1rem;
 
+    }
+    .sign span{
+        font-size: 20px;
     }
     #tablist{
         padding: 5px 20px !important;
