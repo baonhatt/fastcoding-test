@@ -161,7 +161,6 @@ label {
     }
 
     #standard .row>.black {
-        margin-left: 3rem;
     }
 
     #highlights .row .col-md i {
@@ -621,6 +620,11 @@ label {
     padding: 100px 163px;
 
 }
+#sublist .col img{
+    width: 100%; /* Make the image fill the container */
+    transform: scale(1.1); /* Scale the image by 150% */
+    transform-origin: top right;
+}
 
 #tablist {
     background: #f5f5f5;
@@ -631,7 +635,11 @@ label {
     background: #f5f5f5;
     padding: 100px 163px;
 }
-
+#standard .col img{
+    width: 100%; /* Make the image fill the container */
+    transform: scale(1.1); /* Scale the image by 150% */
+    transform-origin: top left;
+}
 #highlights {
     padding: 90px 163px;
 }
