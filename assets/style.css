@@ -197,6 +197,8 @@ label {
         margin-right: 1rem;
 
     }
+  
+    
     .sign span{
         font-size: 20px;
     }
@@ -371,6 +373,14 @@ label {
 }
 
 @media screen and (max-width:895px) {
+    #sublist .col img{
+        width: 100%; 
+        transform: none !important;
+    }
+    #standard .col img{
+        width: 100%; 
+        transform: none !important;
+    }
     #tablist .row .tab{
         display: block ;
     }
