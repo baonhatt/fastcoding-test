@@ -1070,8 +1070,11 @@ section {
     /* margin-left: 1.75rem; */
 }
 
-.p-2 {
-    margin-right: 5rem;
+.pr-2 {
+    margin-right: 2.5rem;
+}
+.pl-2 {
+    margin-left: 2.5rem;
 }
 
 #contact a {
