@@ -85,10 +85,8 @@ nav ul li .icon {
     color: #fff;
 }
 
-.col-2 {
-    width: 20%;
-    padding-right: 60px;
-
+#tablist .row .row-2 .col{
+    margin-left: 130px;
 }
 
 
@@ -153,6 +151,7 @@ label {
     display: none;
 }
 
+
 /* resposive navbar */
 
 @media screen and (min-width: 1224px) {
@@ -170,22 +169,51 @@ label {
     }
 
     .pricing-tag p {
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
+        font-size: 13px;
     }
     #highlights .row .col-md i {
-        margin: 0px 10rem;
+        /* margin: 0px ; */
     }
     
     
 }
+@media screen and (max-width: 1204px){
 
+    
+    #customer .col-md .message p{
+        max-width: 200px;
+        font-size: 13px;
+    }
+    .name{
+        text-align: center;
+    }
+    
+}
 
 
 @media screen and (max-width: 900px) {
+    .avatar img{
+        width: 100%;
+        margin-right: 1rem;
+
+    }
+    #tablist{
+        padding: 0 20px !important;
+    }
+    #standard{
+        padding: 0 20px !important;
+    }
+   span{
+    font-size: 14px;
+   }
     .col-12 {
         display: block;
     }
 
+    .col p{
+        font-size: 13px;
+    }
     label {
         display: block;
     }
@@ -246,7 +274,8 @@ label {
     }
 
     #highlights .row .col-md i {
-        margin: 20px 14rem;
+        margin: 20px 0;
+        font-size: 20px;
     }
 
     #highlights .col-12 {
@@ -306,7 +335,9 @@ label {
         padding: 50px 30px;
 
     }
-
+    .avatar{
+        width: 100%;
+    }
     #banner form {
         margin: 50px 0;
     }
@@ -323,7 +354,10 @@ label {
         width: 100%;
         font-size: 13px;
         display: grid;
-
+        place-content: center;
+    }
+    #contact .col{
+        display: block;
     }
 
     #sublist .col img {
@@ -335,7 +369,31 @@ label {
 }
 
 @media screen and (max-width:895px) {
+    
 
+    section{
+        padding: 0 30px !important;
+    }
+    .pricing-tag p {
+        /* margin-bottom: 1rem; */
+        font-size: 13px;
+    }
+    #design .col-12 p{
+        padding-bottom: 30px;
+    }
+    #tablist .row .col-2{
+        display: grid;
+        place-content: center;
+        width: none;
+        
+    }
+    #tablist .col-2 ul{
+        margin-bottom: 15px;
+    }
+    #tablist .row .row-2 .col {
+        margin-left: 0 !important;
+        text-align: center;
+    }
     #banner .row .col:nth-child(1){
         display: block;
     }
@@ -372,7 +430,9 @@ label {
         width: 100%;
         display: block;
     }
-
+    .row-2{
+        display: block;
+    }
 
     .ml {
         margin-left: 0;
@@ -389,6 +449,12 @@ label {
     #sublist .col .row {
         display: flex;
     }
+    .col-12 p{
+        padding-bottom: 30px !important;
+    }
+    #contact  {
+        padding:  40px 20px !important;
+    }
 }
 
 @media screen and (max-width: 781px) {
@@ -401,9 +467,10 @@ label {
         font-size: 19px;
     }
 
-    section {
-        padding: 20px !important;
+    #design  {
+        padding:  40px 20px !important;
     }
+   
 
     #standard {
         padding: 30px 20px !important;
@@ -748,7 +815,7 @@ section {
 }
 
 #highlights .col-md {
-    display: grid;
+    display: block;
     place-content: center;
     padding: 0 35px;
     min-height: 1px;
@@ -761,7 +828,6 @@ section {
 
 #highlights .col-md i {
     width: 70px;
-    margin: 0 9rem;
     display: inline-block;
     align-items: center;
     height: 70px;
@@ -881,14 +947,16 @@ section {
 }
 
 .avatar {
-    width: 30%;
+    width: 25%;
     float: left;
 }
 
 .name {
-    width: 70%;
+    width: 75%;
     float: left;
     text-align: left;
+    line-height: 30px;
+    padding-left: 26px;
 }
 
 #design .col-12>a {
@@ -919,11 +987,11 @@ section {
 }
 
 #contact input::placeholder {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #contact textarea::placeholder {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #contact input:focus {
@@ -939,7 +1007,7 @@ section {
 }
 
 #contact textarea {
-    height: 142px;
+    height: 169px;
     width: 100%;
     border: 0;
     outline: 0;
@@ -987,7 +1055,7 @@ section {
 footer .container .col-12 p {
     color: rgba(255, 255, 255, 0.50);
     font-size: 12px;
-    padding-bottom: 1px;
+    padding-bottom: 1px !important;
 }
 
 .container .col-12 .apps a {
