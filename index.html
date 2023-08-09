@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <script src="./assets/main.js"></script>
-   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,300&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,400&display=swap');
+    <script src="./assets/main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,300&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,400&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -34,11 +34,11 @@
 
             </ul>
         </nav>
-        
-            <div class="res-btn">
-                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
-            </div>
-       
+
+        <div class="res-btn">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        </div>
+
     </header>
     <div class="wrapper">
 
@@ -199,7 +199,7 @@
         <!-- Standard -->
         <section id="standard">
             <div class="row">
-                <div class="col black ml-7">
+                <div class="col black ">
                     <h3>Standard Picture Section</h3>
                     <span class="line"></span>
                     <p>2rem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam sed iste unde
@@ -325,7 +325,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus iusto ea eaque eos
                             veritatis!</p>
                     </div>
-                    <div class="customer-info clear-fix font-3">
+                    <div class="customer-info  font-3">
                         <div class="avatar">
                             <img src="./assets/img/post.png" alt="">
                         </div>
@@ -426,7 +426,7 @@
     </div>
     <script>
 
-      
+
 
         var header = document.getElementById("myDIV");
         var btns = header.querySelectorAll("ul li a");
@@ -434,7 +434,7 @@
             btns[i].addEventListener("click", function () {
                 var current = document.getElementsByClassName("active-nav");
                 current[0].className = current[0].className.replace("active-nav", "");
-                this.className += " active-nav";
+                this.className += "active-nav";
             });
         }
 
