@@ -1067,7 +1067,7 @@ section {
     border-bottom: 2px solid #d6d6d6;
     margin-bottom: 20px;
     padding: 13px;
-    margin-left: 1.75rem;
+    /* margin-left: 1.75rem; */
 }
 
 .p-2 {
