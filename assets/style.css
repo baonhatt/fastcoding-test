@@ -479,7 +479,9 @@ label {
 }
 
 @media screen and (max-width: 781px) {
-   
+    #tablist{
+        padding: 50px 20px !important;
+    }
     #tablist .row-2{
         display: block;
     }
