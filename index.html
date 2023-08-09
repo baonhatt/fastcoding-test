@@ -201,7 +201,7 @@
             <div class="row">
                 <div class="col black ">
                     <h3>Standard Picture Section</h3>
-                    <span class="line"></span>
+                    <span class="line orange"></span>
                     <p>2rem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam sed iste unde
                         aliquid, exercitationem magnam quidem omnis. Ea accusamus aut consequuntur officia quia
                         molestias unde consectetur, quisquam modi necessitatibus.
@@ -401,7 +401,7 @@
                     <textarea placeholder="Message" id=""></textarea>
                 </div>
             </div>
-            <div class="col-12 font-3">
+            <div class="col-12 ">
                 <a><span>Send Message</span></a>
 
             </div>
@@ -439,7 +439,7 @@
         }
 
 
-        function openCity(evt, cityName) {
+        function openCity(evt, tabname) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab");
             for (i = 0; i < tabcontent.length; i++) {
@@ -449,7 +449,7 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace("active", "");
             }
-            document.getElementById(cityName).style.display = "flex";
+            document.getElementById(tabname).style.display = "block";
             evt.currentTarget.className += "active";
         }
     </script>
