@@ -197,6 +197,10 @@ label {
         margin-right: 1rem;
 
     }
+    #sublist .black .row a{
+        padding-right: 30px;
+
+    }
   
     .pl-2{
         margin-left: 0 !important;
