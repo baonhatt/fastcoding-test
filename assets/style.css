@@ -63,7 +63,9 @@ nav ul li .icon {
     height: 60px;
 }
 
-
+#design .col-12 p {
+    padding-bottom: 30px;
+}
 
 .row {
     width: 100%;
@@ -671,7 +673,7 @@ label {
 }
 
 #design {
-    padding: 49px 163px;
+    padding: 62px 163px;
     background-image: url("./img/news.jpg");
 
 }
@@ -693,7 +695,7 @@ footer {
 }
 
 section {
-    padding: 50px 163px;
+    padding: 140px 163px;
 
 }
 
@@ -759,6 +761,7 @@ section {
 
 .col-3 img {
     float: right;
+    padding-top: 30px;
 }
 
 .ml {
