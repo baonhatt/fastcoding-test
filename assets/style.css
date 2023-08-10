@@ -381,6 +381,9 @@ label {
 }
 
 @media screen and (max-width:895px) {
+    #contact textarea{
+        height: 110px !important;
+    }
     #sublist .col img{
         width: 100%; 
         transform: none !important;
