@@ -23,8 +23,8 @@
 <body>
     <header>
         <div class="brand-icon"><a href="#">
-            <img src="./assets/img/logo.png" alt="">
-        </a></div>
+                <img src="./assets/img/logo.png" alt="">
+            </a></div>
         <input type="checkbox" id="check">
         <nav class="topnav" id="myDIV">
             <ul>
@@ -72,7 +72,7 @@
 
 
         <!-- Tab list -->
-      
+
 
         <section id="tablist">
             <div class="row">
@@ -159,7 +159,8 @@
                         </a>
                         <div class="context">
                             <h4>Title</h4>
-                            <p>Lorem  ipsum dolor sit amet consectetur adipis ipsum dolor sit amet consectetur adipisicing elit. Numquam, repellat. Lorem, ipsum dolor.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipis ipsum dolor sit amet consectetur
+                                adipisicing elit. Numquam, repellat. Lorem, ipsum dolor.</p>
 
                         </div>
 
@@ -170,7 +171,8 @@
                         </a>
                         <div class="context">
                             <h4>Title</h4>
-                            <p>Lorem  ipsum dolor sit amet consectetur adipis ipsum dolor sit amet consectetur adipisicing elit. Numquam, repellat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipis ipsum dolor sit amet consectetur
+                                adipisicing elit. Numquam, repellat.</p>
                         </div>
 
                     </div>
@@ -231,7 +233,7 @@
 
         <!-- End Highlights -->
 
-    
+
 
 
         <!-- Design -->
@@ -288,6 +290,7 @@
     <script>
 
 
+        // navbar active
 
         var header = document.getElementById("myDIV");
         var btns = header.querySelectorAll("ul li a");
@@ -300,26 +303,27 @@
         }
 
 
+        // nav active for tablist
         function openCity(evt, tabname) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace("active", "");
-    }
-    
-    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    if (screenWidth < 900) {
-        document.getElementById(tabname).style.display = "block";
-    } else {
-        document.getElementById(tabname).style.display = "flex";
-    }
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
 
-    evt.currentTarget.className += " active";
-}
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            if (screenWidth < 900) {
+                document.getElementById(tabname).style.display = "block";
+            } else {
+                document.getElementById(tabname).style.display = "flex";
+            }
+
+            evt.currentTarget.className += " active";
+        }
 
     </script>
 </body>

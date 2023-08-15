@@ -155,13 +155,19 @@ label {
 
 
 /* resposive navbar */
-
+@media screen and (max-width: 1500px) {
+     .col-3 img{
+        margin-top: 4rem;
+        width: 90%;
+        height: auto;
+    }
+}
 @media screen and (min-width: 1224px) {
     nav {
         position: relative;
         right: -2rem;
     }
-
+   
     #standard .row>.black {
     }
 
@@ -189,6 +195,10 @@ label {
     .name{
         text-align: center;
     }
+   
+    #tablist p {
+        font-size: 12px;
+    }
     
 }
 
@@ -204,6 +214,7 @@ label {
 
     }
   
+   
     .pl-2{
         margin-left: 0 !important;
     }
@@ -763,8 +774,11 @@ section {
 }
 
 .col-3 img {
+
     float: right;
     padding-top: 30px;
+    /* width: 300px;
+    height: auto; */
 }
 
 .ml {
