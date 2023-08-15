@@ -334,9 +334,6 @@ label {
         margin: 0 auto;
     }
 
-    .col-12 {
-        display: flex;
-    }
 
     .icon {
         font-size: 25px;
@@ -351,8 +348,6 @@ label {
     .ml {
         margin-left: 0 !important;
     }
-
-
 
     #banner {
         padding: 50px 30px;
@@ -391,7 +386,7 @@ label {
 
 }
 
-@media screen and (max-width:895px) {
+@media screen and (max-width:855px) {
     #contact textarea{
         height: 110px !important;
     }
